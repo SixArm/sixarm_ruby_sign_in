@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: sixarm_ruby_sign_in.rb [sixarm_ruby_sign_in]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+	<div id="metadata">
+		<dl>
+			<dt class="modified-date">Last Modified</dt>
+			<dd class="modified-date">2010-02-12 20:46:05 -0800</dd>
+
+			
+			<dt class="requires">Requires</dt>
+			<dd class="requires">
+				<ul>
+				
+				</ul>
+			</dd>
+			
+
+			
+		</dl>
+	</div>
+
+	<div id="documentation">
+		
+		<div class="description">
+			<h2>Description</h2>
+			<h1>SixArm Ruby Gem: Sign In</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+<p>
+Sign In simple abstract framework.
+</p>
+<p>
+You can include this module in your application controller, then your
+controller can define any of these concrete methods.
+</p>
+<p>
+This provides one top-level method:
+</p>
+<pre>
+  sign_in(options=nil) =&gt; true for success, false for failure
+</pre>
+<p>
+The top level method will call mid-level methods that you will define in
+your own controller.
+</p>
+<p>
+sign_in calls:
+</p>
+<pre>
+  sign_in_attempt(options=nil), e.g. authenticate and set current user
+  sign_in_success(options=nil), e.g. redirect to a welcome page
+  sign_in_failure(options=nil), e.g. flash notice help messesage
+</pre>
+<h2>AuthLogic Example</h2>
+<p>
+AuthLogic provides this example:
+</p>
+<pre>
+  def create
+    # sign in attempt
+    @user_session = UserSession.new(params[:user_session])
+    if @user_session.save
+      # sign in success
+      redirect_to account_url
+    else
+      # sign in failure
+      render :action =&gt; :new
+    end
+  end
+</pre>
+<p>
+AuthLogic example refactored for improved security and structure:
+</p>
+<pre>
+  def sign_in_attempt
+    @user_session = UserSession.new(params[:user_session])
+    @user_session.save
+  end
+
+  def sign_in_success
+    redirect_to account_url
+  end
+
+  def sign_in_failure
+    render :action =&gt; :new
+  end
+</pre>
+
+		</div>
+		
+	</div>
+</body>
+</html>
+
