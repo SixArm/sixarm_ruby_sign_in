@@ -1,293 +1,296 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Module: SignIn</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-	<title>Module: SignIn</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (S)</a> &raquo; 
+    
+    
+    <span class="title">SignIn</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-	<script src="./js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-</head>
-<body class="module">
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: SignIn
+  
+  
+  
+</h1>
 
-	<div id="metadata">
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="./lib/sixarm_ruby_sign_in_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/sixarm_ruby_sign_in.rb">lib/sixarm_ruby_sign_in.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/sixarm_ruby_sign_in.rb</dd>
+  
+</dl>
+<div class="clear"></div>
 
-			
-		</div>
 
-		<div id="class-metadata">
 
-			<!-- Parent Class -->
-			
 
-			<!-- Namespace Contents -->
-			
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
 
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#M000000">#sign_in</a></li>
-					
-					<li><a href="#M000001">#sign_in_attempt</a></li>
-					
-					<li><a href="#M000009">#sign_in_failure</a></li>
-					
-					<li><a href="#M000008">#sign_in_success</a></li>
-					
-				</ul>
-			</div>
-			
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sign_in-instance_method" title="#sign_in (instance method)">- (Object) <strong>sign_in</strong>(options = nil) </a>
+    
 
-			<!-- Included Modules -->
-			
-		</div>
+    
+  </span>
+  
+  
+  
+  
+  
+  
 
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="./sixarm_ruby_sign_in_gemspec.html">sixarm_ruby_sign_in.gemspec</a></li>
-				
-					<li class="file"><a href="./sixarm_ruby_sign_in_sha512_txt.html">sixarm_ruby_sign_in.sha512.txt</a></li>
-				
-				</ul>
-			</div>
-			
-
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="./images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
-
-				<ul class="link-list">
-				
-					<li><a href="./SignIn.html">SignIn</a></li>
-				
-					<li><a href="./SignInTest.html">SignInTest</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-	<div id="documentation">
-		<h1 class="module">SignIn</h1>
-
-		<div id="description">
-			<h1>SixArm Ruby Gem: Sign In</h1>
-<table>
-<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
-
-</td></tr>
-<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
-
-</td></tr>
-<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
-
-</td></tr>
-<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
-
-</td></tr>
-</table>
-<p>
-Sign In simple abstract framework.
-</p>
-<p>
-You can include this module in your application controller, then your
-controller can define any of these concrete methods.
-</p>
-<p>
-This provides one top-level method:
-</p>
-<pre>
-  sign_in(options=nil) =&gt; true for success, false for failure
-</pre>
-<p>
-The top level method will call mid-level methods that you will define in
-your own controller.
-</p>
-<p>
-<a href="SignIn.html#M000000">sign_in</a> calls:
-</p>
-<pre>
-  sign_in_attempt(options=nil), e.g. authenticate and set current user
-  sign_in_success(options=nil), e.g. redirect to a welcome page
-  sign_in_failure(options=nil), e.g. flash notice help messesage
-</pre>
-<h2>AuthLogic Example</h2>
-<p>
-AuthLogic provides this example:
-</p>
-<pre>
-  def create
-    # sign in attempt
-    @user_session = UserSession.new(params[:user_session])
-    if @user_session.save
-      # sign in success
-      redirect_to account_url
-    else
-      # sign in failure
-      render :action =&gt; :new
-    end
-  end
-</pre>
-<p>
-AuthLogic example refactored for improved security and structure:
-</p>
-<pre>
-  def sign_in_attempt
-    @user_session = UserSession.new(params[:user_session])
-    @user_session.save
-  end
-
-  def sign_in_success
-    redirect_to account_url
-  end
-
-  def sign_in_failure
-    render :action =&gt; :new
-  end
-</pre>
-
-		</div>
-
-		<!-- Constants -->
-		
-
-		<!-- Attributes -->
-		
-
-		<!-- Methods -->
-		
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
-
-		
-			<div id="sign-in-method" class="method-detail ">
-				<a name="M000000"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">sign_in</span><span
-						class="method-args">(options=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-The <a href="SignIn.html#M000000">sign_in</a> method calls:
+  
+    <span class="summary_desc"><div class='inline'><p>
+The sign_in method calls:
 </p>
 <ul>
-<li><a href="SignIn.html#M000001">sign_in_attempt</a>
-
+<li><p>
+sign_in_attempt
+</p>
 </li>
-<li><a href="SignIn.html#M000008">sign_in_success</a> (if <a
-href="SignIn.html#M000001">sign_in_attempt</a> returns true)
-
+<li><p>
+sign_in_success (if sign_in_attempt returns true)
+</p>
 </li>
-<li><a href="SignIn.html#M000009">sign_in_failure</a> (if <a
-href="SignIn.html#M000001">sign_in_attempt</a> returns false or raises a
-SecurityError)
-
+<li><p>
+sign_in_failure (if sign_in_attempt returns false or raises a
+SecurityError).
+</p>
 </li>
 </ul>
-					
+</div></span>
+  
+</li>
 
-					
-					<div class="method-source-code"
-						id="sign-in-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_sign_in.rb, line 68</span>
-68:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sign_in</span>(<span class="ruby-identifier">options</span>=<span class="ruby-keyword kw">nil</span>)
-69:    <span class="ruby-keyword kw">begin</span>
-70:     <span class="ruby-identifier">sign_in_attempt</span>(<span class="ruby-identifier">options</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">SecurityError</span>
-71:     <span class="ruby-identifier">sign_in_success</span>(<span class="ruby-identifier">options</span>)
-72:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
-73:    <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">SecurityError</span>
-74:     <span class="ruby-identifier">sign_in_failure</span>(<span class="ruby-identifier">options</span>)
-75:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
-76:    <span class="ruby-keyword kw">end</span>
-77:  <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sign_in_attempt-instance_method" title="#sign_in_attempt (instance method)">- (Object) <strong>sign_in_attempt</strong>(options = nil) </a>
+    
 
-				
-			</div>
+    
+  </span>
+  
+  
+  
+  
+  
+  
 
-		
-			<div id="sign-in-attempt-method" class="method-detail ">
-				<a name="M000001"></a>
+  
+    <span class="summary_desc"><div class='inline'><p>
+The sign_in method calls this first.
+</p>
+</div></span>
+  
+</li>
 
-				<div class="method-heading">
-				
-					<span class="method-name">sign_in_attempt</span><span
-						class="method-args">(options=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sign_in_failure-instance_method" title="#sign_in_failure (instance method)">- (Object) <strong>sign_in_failure</strong>(options = nil) </a>
+    
 
-				<div class="method-description">
-					
-					<p>
-The <a href="SignIn.html#M000000">sign_in</a> method calls this first.
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+The sign_in method calls this second, iff sign_in_attempt raises an
+exception.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sign_in_success-instance_method" title="#sign_in_success (instance method)">- (Object) <strong>sign_in_success</strong>(options = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+The sign_in method calls this second, iff sign_in_attempt succeeds.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="sign_in-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sign_in</strong>(options = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The sign_in method calls:
+</p>
+<ul>
+<li><p>
+sign_in_attempt
+</p>
+</li>
+<li><p>
+sign_in_success (if sign_in_attempt returns true)
+</p>
+</li>
+<li><p>
+sign_in_failure (if sign_in_attempt returns false or raises a
+SecurityError)
+</p>
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_sign_in.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id sign_in'>sign_in</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+   <span class='id sign_in_attempt'>sign_in_attempt</span><span class='lparen'>(</span><span class='id options'>options</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SecurityError</span>
+   <span class='id sign_in_success'>sign_in_success</span><span class='lparen'>(</span><span class='id options'>options</span><span class='rparen'>)</span>
+   <span class='kw'>return</span> <span class='kw'>true</span>
+  <span class='kw'>rescue</span> <span class='const'>SecurityError</span>
+   <span class='id sign_in_failure'>sign_in_failure</span><span class='lparen'>(</span><span class='id options'>options</span><span class='rparen'>)</span>
+   <span class='kw'>return</span> <span class='kw'>false</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sign_in_attempt-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sign_in_attempt</strong>(options = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The sign_in method calls this first.
 </p>
 <p>
 You override this method to e.g.:
 </p>
 <ul>
-<li>get a username and password from params
-
+<li><p>
+get a username and password from params
+</p>
 </li>
-<li>find the user by username in the user model
-
+<li><p>
+find the user by username in the user model
+</p>
 </li>
-<li>authenticate the user by verifying the password
-
+<li><p>
+authenticate the user by verifying the password
+</p>
 </li>
 </ul>
 <p>
@@ -296,137 +299,149 @@ If this method succeeds, then control goes to sign_in_success.
 <p>
 If this method raises an error, then control goes to sign_in_failure.
 </p>
-					
 
-					
-					<div class="method-source-code"
-						id="sign-in-attempt-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_sign_in.rb, line 91</span>
-91:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sign_in_attempt</span>(<span class="ruby-identifier">options</span>=<span class="ruby-keyword kw">nil</span>)
-92:  <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="sign-in-failure-method" class="method-detail ">
-				<a name="M000009"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">sign_in_failure</span><span
-						class="method-args">(options=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_sign_in.rb', line 91</span>
 
-				<div class="method-description">
-					
-					<p>
-The <a href="SignIn.html#M000000">sign_in</a> method calls this second, iff
-<a href="SignIn.html#M000001">sign_in_attempt</a> raises an exception.
+<span class='kw'>def</span> <span class='id sign_in_attempt'>sign_in_attempt</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sign_in_failure-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sign_in_failure</strong>(options = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The sign_in method calls this second, iff sign_in_attempt raises an
+exception.
 </p>
 <p>
 You override this method to e.g.:
 </p>
 <ul>
-<li>show the user a flash warning message saying &#8220;Sorry&#8230;&#8220;
-
+<li><p>
+show the user a flash warning message saying &#8220;Sorry&#8230;&#8220;
+</p>
 </li>
-<li>redirect to a help page
-
+<li><p>
+redirect to a help page 
+</p>
 </li>
-<li>log the attempt and possibly see if it&#8217;s a hacker
-
+<li><p>
+log the attempt and possibly see if it&#8217;s a hacker
+</p>
 </li>
 </ul>
-					
 
-					
-					<div class="method-source-code"
-						id="sign-in-failure-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_sign_in.rb, line 115</span>
-115:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sign_in_failure</span>(<span class="ruby-identifier">options</span>=<span class="ruby-keyword kw">nil</span>)
-116:  <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="sign-in-success-method" class="method-detail ">
-				<a name="M000008"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">sign_in_success</span><span
-						class="method-args">(options=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_sign_in.rb', line 115</span>
 
-				<div class="method-description">
-					
-					<p>
-The <a href="SignIn.html#M000000">sign_in</a> method calls this second, iff
-<a href="SignIn.html#M000001">sign_in_attempt</a> succeeds.
+<span class='kw'>def</span> <span class='id sign_in_failure'>sign_in_failure</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sign_in_success-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sign_in_success</strong>(options = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The sign_in method calls this second, iff sign_in_attempt succeeds.
 </p>
 <p>
 You override this method to e.g.:
 </p>
 <ul>
-<li>show the user a flash notice message saying &#8220;Welcome&#8230;&#8220;
-
+<li><p>
+show the user a flash notice message saying &#8220;Welcome&#8230;&#8220;
+</p>
 </li>
-<li>redirect to the user&#8217;s home page
-
+<li><p>
+redirect to the user&#8217;s home page
+</p>
 </li>
-<li>customize views based on the user&#8217;s info
-
+<li><p>
+customize views based on the user&#8217;s info
+</p>
 </li>
 </ul>
-					
-
-					
-					<div class="method-source-code"
-						id="sign-in-success-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_sign_in.rb, line 103</span>
-103:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sign_in_success</span>(<span class="ruby-identifier">options</span>=<span class="ruby-keyword kw">nil</span>)
-104:  <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-
-	</div>
 
 
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
 
-</body>
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_sign_in.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id sign_in_success'>sign_in_success</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Mon Dec 13 17:59:30 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.3 (ruby-1.9.2).
+</div>
+
+  </body>
 </html>
-
