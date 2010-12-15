@@ -1,16 +1,15 @@
+# -*- encoding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem: Sign In
+= SixArm Ruby Gem » SignIn
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
+License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
 
-Sign In simple abstract framework.
+SignIn is a simple abstract framework for managing a user's web session.
 
-You can include this module in your application controller,
-then your controller can define any of these concrete methods. 
+Include this in your application controller, then define concrete methods.
 
 This provides one top-level method:
   sign_in(options=nil) => true for success, false for failure
