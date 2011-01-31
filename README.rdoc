@@ -1,5 +1,4 @@
-
-= SixArm Ruby Gem: Sign In
+= SixArm.com » Ruby » SignIn interface for typical Rails user sign in
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
