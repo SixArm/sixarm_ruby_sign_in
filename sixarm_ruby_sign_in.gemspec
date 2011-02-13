@@ -1,7 +1,11 @@
 Gem::Specification.new do |s|
 
-  s.name              = "sixarm_ruby_sign_in"
-  s.summary           = "SixArm Ruby Gem: Sign In abstraction for a typical web app user"
+  NAME                = "sixarm_ruby_sign_in"
+  SOURCES             = []
+  TESTERS             = []
+
+  s.name              = NAME
+  s.summary           = "SixArm.com » Ruby » Sign In abstraction for a typical web app user"
   s.version           = "1.1.4"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
@@ -12,7 +16,10 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.require_path      = 'lib'
   s.has_rdoc          = true
-  s.files             = ['README.rdoc','LICENSE.txt','lib/sixarm_ruby_sign_in.rb']
-  s.test_files        = ['test/sixarm_ruby_sign_in_test.rb']
+
+  s.files             = [".gemtest","Rakefile","README.rdoc","LICENSE.txt"]
+                        ["lib/#{NAME}.rb"] + SOURCES.map{|x| "lib/#{NAME}/#{x}.rb"} +
+                        ["test/#{NAME}.rb"] + TESTERS.map{|x| "test/#{NAME}/#{x}"}
+  s.test_files        = SOURCES.map{|x| "test/#{NAME}/#{x}_test.rb"}
 
 end
