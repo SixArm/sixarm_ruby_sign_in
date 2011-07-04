@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+require 'simplecov'
+SimpleCov.start
 require 'test/unit'
 require 'sixarm_ruby_sign_in'
 

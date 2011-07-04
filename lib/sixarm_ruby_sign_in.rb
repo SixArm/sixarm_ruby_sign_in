@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 =begin rdoc
 
 = SixArm.com » Ruby » SignIn interface for typical Rails user sign in
@@ -86,7 +87,7 @@ module SignIn
  # If this method succeeds, then control goes to sign_in_success.
  #
  # If this method raises an error, then control goes to sign_in_failure.
- 
+
  def sign_in_attempt(options=nil)
  end
 
@@ -108,7 +109,7 @@ module SignIn
  #
  # You override this method to e.g.:
  # - show the user a flash warning message saying "Sorry..."
- # - redirect to a help page 
+ # - redirect to a help page
  # - log the attempt and possibly see if it's a hacker
 
  def sign_in_failure(options=nil)
