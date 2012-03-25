@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> SignIn interface for typical Rails user sign in
 
-* Docs: <http://sixarm.com/sixarm_ruby_sign_in/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_sign_in/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_sign_in>
 * Repo: <http://github.com/sixarm/sixarm_ruby_sign_in>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
