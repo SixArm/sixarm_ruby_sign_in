@@ -92,8 +92,3 @@ AuthLogic example refactored for improved security and structure:
     def sign_in_failure
      render :action => :new
     end
-
-## Changes
-
-* 2012-03-14 1.1.4 Update docs, tests
-* 2010-10-02 1.1.4 Update for Ruby 1.9
