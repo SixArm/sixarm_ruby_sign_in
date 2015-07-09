@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> SignIn interface for typical Rails user
+# SixArm.com » Ruby » <br> SignIn abstract interface for apps
 
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_sign_in.png)](https://travis-ci.org/SixArm/sixarm_ruby_sign_in)
@@ -11,9 +11,9 @@
 
 ## Introduction
 
-Sign In simple abstract framework.
+SignIn is a simple abstract framework for apps.
 
-You can include this module in your application controller,
+You can include this module in a Rails application controller,
 then your controller can define any of these concrete methods.
 
 For docs go to <http://sixarm.com/sixarm_ruby_sign_in/doc>
