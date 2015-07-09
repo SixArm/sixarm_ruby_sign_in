@@ -1,4 +1,7 @@
-# Ruby » <br> SignIn interface for typical Rails user sign in
+# SixArm.com » Ruby » <br> SignIn interface for typical Rails user
+
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_sign_in.png)](https://travis-ci.org/SixArm/sixarm_ruby_sign_in)
 
 * Doc: <http://sixarm.com/sixarm_ruby_sign_in/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_sign_in>
@@ -11,7 +14,7 @@
 Sign In simple abstract framework.
 
 You can include this module in your application controller,
-then your controller can define any of these concrete methods. 
+then your controller can define any of these concrete methods.
 
 For docs go to <http://sixarm.com/sixarm_ruby_sign_in/doc>
 
@@ -26,7 +29,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_sign_in", "~>1.1.4"
+    gem "sixarm_ruby_sign_in", ">=1.1.6", "<2"
 
 Require:
 
@@ -84,7 +87,7 @@ AuthLogic example refactored for improved security and structure:
       @user_session = UserSession.new(params[:user_session])
       @user_session.save
     end
- 
+
     def sign_in_success
       redirect_to account_url
     end

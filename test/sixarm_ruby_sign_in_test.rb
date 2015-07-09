@@ -4,19 +4,19 @@ require "simplecov"
 SimpleCov.start
 require "sixarm_ruby_sign_in"
 
-class SignInTest < Test::Unit::TestCase
-  
+class SignInTest < Minitest::Test
+
   include SignIn
-  
+
   RIGHT=:foo
   WRONG=:bar
-  
+
   def setup
    @sign_in_attempt_seen=nil
    @sign_in_success_seen=nil
    @sign_in_failure_seen=nil
  end
-  
+
   def test_sign_in_right
    user=RIGHT
    x=sign_in(user)
@@ -25,7 +25,7 @@ class SignInTest < Test::Unit::TestCase
    assert(!@sign_in_failure_seen,"sign_in_failure_seen user:#{user}")
    assert_equal(true,x,"sign_in x:#{x}")
  end
-  
+
   def test_sign_in_wrong
    user=WRONG
    x=sign_in(user)
@@ -34,7 +34,7 @@ class SignInTest < Test::Unit::TestCase
    assert( @sign_in_failure_seen,"sign_in_failure_seen user:#{user}")
    assert_equal(false,x,"sign_in user:#{x}")
   end
-  
+
   def sign_in_attempt(options=nil)
    @sign_in_attempt_seen=true
    if options==WRONG then raise SecurityError end
@@ -44,7 +44,7 @@ class SignInTest < Test::Unit::TestCase
   def sign_in_success(options=nil)
     @sign_in_success_seen=true
   end
-  
+
   def sign_in_failure(options=nil)
    @sign_in_failure_seen=true
  end
