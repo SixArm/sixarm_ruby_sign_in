@@ -1,12 +1,19 @@
 # SixArm.com » Ruby » <br> SignIn abstract interface for apps
 
+<!--HEADER-OPEN-->
+
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_sign_in)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_sign_in.png)](https://travis-ci.org/SixArm/sixarm_ruby_sign_in)
 
+* Git: <https://github.com/sixarm/sixarm_ruby_sign_in>
 * Doc: <http://sixarm.com/sixarm_ruby_sign_in/doc>
-* Gem: <http://rubygems.org/gems/sixarm_ruby_sign_in>
-* Repo: <http://github.com/sixarm/sixarm_ruby_sign_in>
-* Email: Joel Parker Henderson, <joel@sixarm.com>
+* Gem: <https://rubygems.org/gems/sixarm_ruby_sign_in>
+* Contact: Joel Parker Henderson, <joel@sixarm.com>
+* Changes: See CHANGES.md file.
+* License: See LICENSE.md file.
+* Helping: See CONTRIBUTING.md file.
+
+<!--HEADER-SHUT-->
 
 
 ## Introduction
@@ -21,32 +28,29 @@ For docs go to <http://sixarm.com/sixarm_ruby_sign_in/doc>
 Want to help? We're happy to get pull requests.
 
 
-## Install quickstart
+<!--INSTALL-OPEN-->
 
-Install:
+## Install
 
-    gem install sixarm_ruby_sign_in
+To install using a Gemfile, add this:
 
-Bundler:
+    gem "sixarm_ruby_sign_in", ">= 1.1.6, < 2"
 
-    gem "sixarm_ruby_sign_in", ">=1.1.6", "<2"
+To install using the command line, run this:
 
-Require:
+    gem install sixarm_ruby_sign_in -v ">= 1.1.6, < 2"
+
+To install using the command with high security, run this:
+
+    wget http://sixarm.com/sixarm.pem
+    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
+    gem install sixarm_ruby_sign_in -v ">= 1.1.6, < 2" --trust-policy HighSecurity
+
+To require the gem in your code:
 
     require "sixarm_ruby_sign_in"
 
-
-## Install with security (optional)
-
-To enable high security for all our gems:
-
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem
-    gem sources --add http://sixarm.com
-
-To install with high security:
-
-    gem install sixarm_ruby_sign_in --trust-policy HighSecurity
+<!--INSTALL-SHUT-->
 
 
 ## Details
