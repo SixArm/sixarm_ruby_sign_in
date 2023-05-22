@@ -8,7 +8,7 @@ GEM
   specs:
     docile (1.4.0)
     minitest (5.18.0)
-    rake (10.5.0)
+    rake (12.3.3)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -22,7 +22,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (>= 5.7.0, < 6)
-  rake (> 10.4.2, < 11)
+  rake (>= 12.3.3, < 13)
   simplecov (>= 0.10.0, < 2)
   sixarm_ruby_minitest_extensions (>= 1.0.8, < 2)
   sixarm_ruby_sign_in!
